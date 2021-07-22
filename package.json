@@ -1,0 +1,19 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "CLI todo",
+  "main": "todo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanonymous/Todo-JS.git"
+  },
+  "author": "Yeshasvi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yanonymous/Todo-JS/issues"
+  },
+  "homepage": "https://github.com/yanonymous/Todo-JS#readme"
+}
