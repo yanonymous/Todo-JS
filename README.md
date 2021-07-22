@@ -15,18 +15,11 @@ Then install chalk and lowdb with commands
 
 Currently have 4 commands
 
-  * new 
-  * get
-  * complete
-  * help
+  * new:      used to create a new todo 
+  * get:      used to retrieve your todos
+  * complete: used to mark a todo as complete
+  * help:     used to print the usage guide
 
-new:      used to create a new todo
-
-get:      used to retrieve your todos
-
-complete: used to mark a todo as complete
-
-help:     used to print the usage guide
 
 Still have some bugs will fix it soon
 
