@@ -8,10 +8,11 @@ If you want to try this out
 
 Install Node.js (Easily available)
 
-Then install chalk and lowdb with commands
+Then install chalk and lowdb with command
 
-  * `npm install chalk`
-  * `npm install lowdb`
+  * `npm install`
+  
+  This alone will install all dependencies
 
 Currently have 4 commands
 
