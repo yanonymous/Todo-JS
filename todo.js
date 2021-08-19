@@ -23,15 +23,15 @@ const usage = function() {
   console.log(usageText)
 }
 
-const readline = require('readline');
+import { join } from 'path'
 
-//const low = require('lowdb')
-import {Low} from 'lowdb';
+import { Low, JSONFile } from 'lowdb'
 
-const FileSync = require('lowdb/adapters/FileSync')
+const file = join('db.json')
+const adapter = new JSONFile(file)
+const db = new Low(adapter)
 
-const adapter = new FileSync('db.json')
-const db = Low(adapter)
+import readline from "readline";
 
 function errorLog(error) {
   const eLog = chalk.red(error)
@@ -48,7 +48,8 @@ if (commands.indexOf(args[2]) == -1) {
   usage()
 }
 
-db.defaults({ todos: []}).write()
+db.data ||= { todos: [] }
+
 
 switch(args[2]) {
   case 'help':
